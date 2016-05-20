@@ -13,6 +13,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{3F34
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CF8479DD-5C91-4D36-A3FE-47E24DF817DF}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TeamCollabSystemWEB", "..\TeamCollabSystemWEB\", "{B6569FF5-5D8F-4DFA-9CEC-13A8404EE111}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_23121"
+		Debug.AspNetCompiler.PhysicalPath = "..\TeamCollabSystemWEB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_23121\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_23121"
+		Release.AspNetCompiler.PhysicalPath = "..\TeamCollabSystemWEB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_23121\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "23121"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +52,10 @@ Global
 		{F96C1D73-FE9B-4210-B650-E6F0CA9900ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F96C1D73-FE9B-4210-B650-E6F0CA9900ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F96C1D73-FE9B-4210-B650-E6F0CA9900ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6569FF5-5D8F-4DFA-9CEC-13A8404EE111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6569FF5-5D8F-4DFA-9CEC-13A8404EE111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6569FF5-5D8F-4DFA-9CEC-13A8404EE111}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6569FF5-5D8F-4DFA-9CEC-13A8404EE111}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +64,7 @@ Global
 		{F2CE2E41-7ACA-4860-99A4-B4A71B81AA0B} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
 		{5A98447C-FB33-41A4-9111-9D49817071F1} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
 		{F96C1D73-FE9B-4210-B650-E6F0CA9900ED} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
+		{B6569FF5-5D8F-4DFA-9CEC-13A8404EE111} = {CF8479DD-5C91-4D36-A3FE-47E24DF817DF}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 66fe5c92-d110-41b4-a069-82e8b805a2ba
