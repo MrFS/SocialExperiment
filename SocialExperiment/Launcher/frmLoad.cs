@@ -22,10 +22,10 @@ namespace Launcher
         {
             InitializeComponent();
         }
-
+        
         private void frmLoad_Load(object sender, EventArgs e)
         {
-            
+            //Core.DB.DBConnect con = new Core.DB.DBConnect(); <- Legg i en static class
         }
     }
 }

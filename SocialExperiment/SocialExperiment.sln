@@ -29,7 +29,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SocialExperimentWEB", "..\S
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "12862"
+		SlnRelativePath = "..\SocialExperimentWEB\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mainSocial", "mainSocial\mainSocial.csproj", "{CB7E6C38-FA46-435D-9240-31ED07E66E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +52,10 @@ Global
 		{346B6C8A-9B34-4DA4-899C-C55A96969628}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{346B6C8A-9B34-4DA4-899C-C55A96969628}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{346B6C8A-9B34-4DA4-899C-C55A96969628}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CB7E6C38-FA46-435D-9240-31ED07E66E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7E6C38-FA46-435D-9240-31ED07E66E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7E6C38-FA46-435D-9240-31ED07E66E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7E6C38-FA46-435D-9240-31ED07E66E60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +64,7 @@ Global
 		{5A98447C-FB33-41A4-9111-9D49817071F1} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
 		{F96C1D73-FE9B-4210-B650-E6F0CA9900ED} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
 		{346B6C8A-9B34-4DA4-899C-C55A96969628} = {CF8479DD-5C91-4D36-A3FE-47E24DF817DF}
+		{CB7E6C38-FA46-435D-9240-31ED07E66E60} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 66fe5c92-d110-41b4-a069-82e8b805a2ba
