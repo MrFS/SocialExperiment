@@ -9,24 +9,60 @@ using MySql.Data;
 
 namespace Core
 {
-    public class vController
+    public class vController : DB.DBConnect
 
     {
         public vController()
         {
+            DataTable dt = new DataTable("Version Controller");
+
+            dt = Select("SELECT * FROM versioncontrol WHERE ID=1");
+
+            _Major = dt.Rows[0].Field<int>(1);
+
+            _Minor = dt.Rows[0].Field<int>(2);
+
+            _Build = dt.Rows[0].Field<int>(3);
+
+            _Revision = dt.Rows[0].Field<int>(4);
 
             if (Debugger.IsAttached)
             {
+                int maj = dt.Rows[0].Field<int>(1);
+                int min = dt.Rows[0].Field<int>(2);
+                int bui = dt.Rows[0].Field<int>(3);
+                int rev = dt.Rows[0].Field<int>(4);
 
-                DataTable dt = new DataTable("Version Controller");
+                if (rev < 30)
+                {
+                    rev++;
 
-                _Major = 1;
+                    Update("UPDATE versioncontrol SET revision=" + rev + " WHERE ID=1");
 
-                _Minor = 0;
+                } else if (rev == 30)
+                {
+                    rev = 0;
+                    bui++;
 
-                _Build = 0;
+                    Update("UPDATE versioncontrol SET build=" + bui + ",revision=" + rev + "WHERE ID=1");
+                }
+                
+                if (bui == 10)
+                {
+                    min++;
+                    bui = 0;
 
-                _Revision = 0;
+                    Update("UPDATE versioncontrol SET minor=" + min + ",build=" + bui + "WHERE ID =1");
+                }
+
+                if (min == 4)
+                {
+                    maj++;
+                    min = 0;
+
+                    Update("UPDATE versioncontrol SET major=" + maj + ",minor=" + min + "WHERE ID=1");
+                }
+               
             }
             
 
