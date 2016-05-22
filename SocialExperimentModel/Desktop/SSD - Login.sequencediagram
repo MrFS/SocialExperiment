@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2260957a-d5af-405a-85ef-f7ea7477154e" name="SSD - Login" linkedPackageId="2117312d-c196-4382-96bb-15d8438841bb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="97346ff3-a8a9-41f7-93a2-7ee8d69da140">
+      <profileInstance Id="303f4fff-c7fa-4d22-83e4-0eb3ad3316b0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c8de9a60-8a82-49ca-a9c1-832840c2adcb">
+      <profileInstance Id="bbd5697b-41a7-45c7-8111-c5dc112a5452" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="4ec6eca3-e38b-48bc-8833-1a8d89c21379" name="SSD - Login" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="a96d4286-8557-4fda-982f-bd0a0228c111" />
+        <lifelines>
+          <lifeline Id="0b94a0c9-9694-46ff-abe2-9d84474feeb4" name="User" isActor="false" lifelineDisplayName="User">
+            <elementDefinition Id="b4482e21-1b70-4172-baf0-a4c830ee1260" />
+          </lifeline>
+          <lifeline Id="a72d28c0-da8d-4bfa-bac4-69a70b15e084" name="System" isActor="false" lifelineDisplayName="System">
+            <elementDefinition Id="9cc195c4-670f-474d-9e83-524a0b1f5ea9" />
+          </lifeline>
+          <lifeline Id="ccb49d9a-b656-4aa6-b17c-224028e408ab" name="Database" isActor="false" lifelineDisplayName="Database">
+            <elementDefinition Id="01802a9b-3d77-46b6-b5e0-85582af466ca" />
+          </lifeline>
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2117312d-c196-4382-96bb-15d8438841bb" name="SocialExperimentModel">
+    <elementDefinition Id="26a3c0c3-198c-457d-88d3-d7de5729cdf0" />
+  </package>
+</SequenceDesignerModel>
