@@ -9,5 +9,10 @@ namespace Core
     public class About
     {
 
+        public string titleLauncher()
+        {
+            return "Here come dat boi"; //Set Launcher title
+        }
+
     }
 }

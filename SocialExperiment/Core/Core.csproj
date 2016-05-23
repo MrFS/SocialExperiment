@@ -78,6 +78,9 @@
       <DependentUpon>UI.cs</DependentUpon>
     </Compile>
     <Compile Include="vController.cs" />
+    <Compile Include="XP\XP.cs" />
+    <Compile Include="XP\GetLVL.cs" />
+    <Compile Include="XP\GetEXP.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -97,6 +100,12 @@
     <EmbeddedResource Include="UI.resx">
       <DependentUpon>UI.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XP\EXPChart.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

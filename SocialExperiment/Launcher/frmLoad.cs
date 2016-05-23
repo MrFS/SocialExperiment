@@ -23,6 +23,7 @@ namespace Launcher
 
         DBConnect con = new DBConnect();
         vController v = new vController();
+        About a = new About();
 
         public frmLoad()
         {
@@ -31,6 +32,10 @@ namespace Launcher
         
         private void frmLoad_Load(object sender, EventArgs e)
         {
+
+            this.Text = a.titleLauncher();
+            this.CenterToScreen();
+
             try
             {
                 DataTable dt = new DataTable();
@@ -48,6 +53,9 @@ namespace Launcher
                               " Minor: " + v.Minor + 
                               " Build: " + v.Build + 
                               " Revision: " + v.Revision;
+            Core.XP.GetLVL xp = new Core.XP.GetLVL("test");
+
+            autoLabel3.Text = xp.LVL.ToString();
         }
     }
 }

@@ -146,7 +146,7 @@ namespace Core.DB
         {
             //string query = "SELECT * FROM tableinfo";
 
-            //Create a list to store the result
+            //Create a datatable to store the result
             DataTable dt = new DataTable();
 
             //Open connection

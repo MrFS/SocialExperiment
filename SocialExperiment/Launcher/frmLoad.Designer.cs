@@ -37,11 +37,14 @@ namespace Launcher
         {
             this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.autoLabel3 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // autoLabel1
             // 
-            this.autoLabel1.Location = new System.Drawing.Point(194, 102);
+            this.autoLabel1.Location = new System.Drawing.Point(391, 57);
             this.autoLabel1.Name = "autoLabel1";
             this.autoLabel1.Size = new System.Drawing.Size(60, 13);
             this.autoLabel1.TabIndex = 0;
@@ -49,11 +52,28 @@ namespace Launcher
             // 
             // autoLabel2
             // 
-            this.autoLabel2.Location = new System.Drawing.Point(323, 48);
+            this.autoLabel2.Location = new System.Drawing.Point(391, 33);
             this.autoLabel2.Name = "autoLabel2";
             this.autoLabel2.Size = new System.Drawing.Size(60, 13);
             this.autoLabel2.TabIndex = 1;
             this.autoLabel2.Text = "autoLabel2";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(196, 200);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // autoLabel3
+            // 
+            this.autoLabel3.Location = new System.Drawing.Point(391, 85);
+            this.autoLabel3.Name = "autoLabel3";
+            this.autoLabel3.Size = new System.Drawing.Size(60, 13);
+            this.autoLabel3.TabIndex = 3;
+            this.autoLabel3.Text = "autoLabel3";
             // 
             // frmLoad
             // 
@@ -64,6 +84,8 @@ namespace Launcher
             this.CaptionFont = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientSize = new System.Drawing.Size(693, 200);
             this.ControlBox = false;
+            this.Controls.Add(this.autoLabel3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.autoLabel2);
             this.Controls.Add(this.autoLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -71,8 +93,9 @@ namespace Launcher
             this.ShowIcon = false;
             this.ShowMaximizeBox = false;
             this.ShowMinimizeBox = false;
-            this.Text = "Team Collaboration System";
+            this.Text = "core.about";
             this.Load += new System.EventHandler(this.frmLoad_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,5 +105,7 @@ namespace Launcher
 
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel3;
     }
 }
