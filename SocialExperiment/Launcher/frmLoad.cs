@@ -16,6 +16,8 @@ using System.Windows.Forms;
 using Core;
 using Core.DB;
 using MySql.Data.MySqlClient;
+using System.Diagnostics;
+
 namespace Launcher
 {
     public partial class frmLoad : Syncfusion.Windows.Forms.MetroForm
@@ -29,9 +31,21 @@ namespace Launcher
         {
             InitializeComponent();
         }
+
+        public static void UI()
+        {
+            Application.Run(new UI());
+        }
         
         private void frmLoad_Load(object sender, EventArgs e)
         {
+            if (Debugger.IsAttached)
+            {
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(UI));
+
+                t.Start();
+            }
+            
 
             this.Text = a.titleLauncher();
             this.CenterToScreen();

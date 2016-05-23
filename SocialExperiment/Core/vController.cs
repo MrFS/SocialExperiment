@@ -39,12 +39,12 @@ namespace Core
 
                     Update("UPDATE versioncontrol SET revision=" + rev + " WHERE ID=1");
 
-                } else if (rev == 30)
+                }else if (rev == 30)
                 {
                     rev = 0;
                     bui++;
 
-                    Update("UPDATE versioncontrol SET build=" + bui + ",revision=" + rev + "WHERE ID=1");
+                    Update("UPDATE versioncontrol SET build=" + bui + ",revision=" + rev + " WHERE ID=1");
                 }
                 
                 if (bui == 10)
@@ -52,7 +52,7 @@ namespace Core
                     min++;
                     bui = 0;
 
-                    Update("UPDATE versioncontrol SET minor=" + min + ",build=" + bui + "WHERE ID =1");
+                    Update("UPDATE versioncontrol SET minor=" + min + ",build=" + bui + " WHERE ID =1");
                 }
 
                 if (min == 4)
@@ -60,7 +60,7 @@ namespace Core
                     maj++;
                     min = 0;
 
-                    Update("UPDATE versioncontrol SET major=" + maj + ",minor=" + min + "WHERE ID=1");
+                    Update("UPDATE versioncontrol SET major=" + maj + ",minor=" + min + " WHERE ID=1");
                 }
                
             }

@@ -12,9 +12,27 @@ namespace Core
 {
     public partial class UI : Form
     {
+        int test = 320;
         public UI()
         {
             InitializeComponent();
+        }
+
+        private void UI_Load(object sender, EventArgs e)
+        {
+            this.CenterToScreen();
+
+        }
+
+        private void coreTick_Tick(object sender, EventArgs e)
+        {
+            test++;
+            toolStripLabel2.Text = test.ToString();
+
+            DB.DBConnect db = new DB.DBConnect();
+            
+
+
         }
     }
 }
