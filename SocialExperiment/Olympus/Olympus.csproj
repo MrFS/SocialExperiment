@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A98447C-FB33-41A4-9111-9D49817071F1}</ProjectGuid>
+    <ProjectGuid>{B29D18F5-4326-4F18-92C3-4FEC23EB5C95}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Launcher</RootNamespace>
-    <AssemblyName>Launcher</AssemblyName>
+    <RootNamespace>Olympus</RootNamespace>
+    <AssemblyName>Olympus</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -36,10 +36,6 @@
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.5\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.Grid.Base, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="Syncfusion.Grid.Windows, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="Syncfusion.Shared.Base, Version=13.4460.0.53, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -60,16 +56,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLoad.cs">
+    <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLoad.Designer.cs">
-      <DependentUpon>frmLoad.cs</DependentUpon>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLoad.resx">
-      <DependentUpon>frmLoad.cs</DependentUpon>
+    <Compile Include="Thread\StartUp.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,9 +95,9 @@
       <Project>{f96c1d73-fe9b-4210-b650-e6f0ca9900ed}</Project>
       <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Olympus\Olympus.csproj">
-      <Project>{b29d18f5-4326-4f18-92c3-4fec23eb5c95}</Project>
-      <Name>Olympus</Name>
+    <ProjectReference Include="..\SerialGenerator\SerialGenerator.csproj">
+      <Project>{d5adb9ea-955d-490e-9655-5ad211c0ba55}</Project>
+      <Name>SerialGenerator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

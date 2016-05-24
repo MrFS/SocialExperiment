@@ -20,7 +20,8 @@ namespace Core
 
         private void UI_Load(object sender, EventArgs e)
         {
-            this.CenterToScreen();
+            CenterToScreen();
+            
 
         }
 
@@ -30,7 +31,16 @@ namespace Core
             toolStripLabel2.Text = test.ToString();
 
             DB.DBConnect db = new DB.DBConnect();
-            
+
+            if (db.State())
+            {
+                serverConnection.BackColor = Color.Green;
+                Refresh();
+            }else
+            {
+                serverConnection.BackColor = Color.Red;
+                Refresh();
+            }
 
 
         }

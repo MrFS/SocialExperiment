@@ -81,10 +81,20 @@ namespace Core.DB
         }
 
         //State statement
-        //public bool State()
-        //{
-        //    //Add return states jippijuppfak            
-        //}
+        public bool State()
+        {
+            bool value = false;
+            switch (con.State)
+            {
+                case ConnectionState.Closed:
+                    value = false;
+                    break;
+                case ConnectionState.Open:
+                    value = true;
+                    break;
+            }
+            return value;
+        }
 
         //Insert statement
         public void Insert(string query)

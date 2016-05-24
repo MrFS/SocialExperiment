@@ -32,20 +32,22 @@ namespace Launcher
             InitializeComponent();
         }
 
-        public static void UI()
+        private void Olympus()
         {
-            Application.Run(new UI());
+            Application.Run(new Olympus.frmMain());
         }
-        
+       
         private void frmLoad_Load(object sender, EventArgs e)
         {
             if (Debugger.IsAttached)
             {
-                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(UI));
-
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(Olympus));
                 t.Start();
             }
-            
+
+            pictureBox1.BackgroundImage = Core.Properties.Resources.logoSocialExperiment;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.BackgroundImage.RotateFlip(RotateFlipType.RotateNoneFlipX);
 
             this.Text = a.titleLauncher();
             this.CenterToScreen();
@@ -63,13 +65,14 @@ namespace Launcher
                 MessageBox.Show(ex.Message);
             }
 
-            autoLabel2.Text = "Major: " + v.Major + 
-                              " Minor: " + v.Minor + 
-                              " Build: " + v.Build + 
+            autoLabel2.Text = "Major: " + v.Major +
+                              " Minor: " + v.Minor +
+                              " Build: " + v.Build +
                               " Revision: " + v.Revision;
             Core.XP.GetLVL xp = new Core.XP.GetLVL("test");
 
             autoLabel3.Text = xp.LVL.ToString();
         }
-    }
+    } 
+    
 }

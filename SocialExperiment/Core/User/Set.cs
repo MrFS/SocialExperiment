@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Security
+namespace Core.User
 {
-    class Decrypt
+    class Set : Get
     {
+
     }
 }

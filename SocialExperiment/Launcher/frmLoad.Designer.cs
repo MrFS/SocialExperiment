@@ -39,12 +39,14 @@ namespace Launcher
             this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.autoLabel3 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // autoLabel1
             // 
-            this.autoLabel1.Location = new System.Drawing.Point(391, 57);
+            this.autoLabel1.Location = new System.Drawing.Point(327, 120);
             this.autoLabel1.Name = "autoLabel1";
             this.autoLabel1.Size = new System.Drawing.Size(60, 13);
             this.autoLabel1.TabIndex = 0;
@@ -52,7 +54,7 @@ namespace Launcher
             // 
             // autoLabel2
             // 
-            this.autoLabel2.Location = new System.Drawing.Point(391, 33);
+            this.autoLabel2.Location = new System.Drawing.Point(327, 96);
             this.autoLabel2.Name = "autoLabel2";
             this.autoLabel2.Size = new System.Drawing.Size(60, 13);
             this.autoLabel2.TabIndex = 1;
@@ -69,11 +71,29 @@ namespace Launcher
             // 
             // autoLabel3
             // 
-            this.autoLabel3.Location = new System.Drawing.Point(391, 85);
+            this.autoLabel3.Location = new System.Drawing.Point(327, 148);
             this.autoLabel3.Name = "autoLabel3";
             this.autoLabel3.Size = new System.Drawing.Size(60, 13);
             this.autoLabel3.TabIndex = 3;
             this.autoLabel3.Text = "autoLabel3";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(476, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(476, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label2";
             // 
             // frmLoad
             // 
@@ -84,6 +104,8 @@ namespace Launcher
             this.CaptionFont = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientSize = new System.Drawing.Size(693, 200);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.autoLabel3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.autoLabel2);
@@ -107,5 +129,7 @@ namespace Launcher
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

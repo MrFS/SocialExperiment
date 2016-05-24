@@ -38,6 +38,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelling", "Modelling", "{
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SocialExperimentModel", "..\SocialExperimentModel\SocialExperimentModel.modelproj", "{3A96F8AB-C7A1-4607-91AB-25563BF1100E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Administration", "Administration", "{F414A970-9DB6-4E5F-86FA-A1BC1109220A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialGenerator", "SerialGenerator\SerialGenerator.csproj", "{D5ADB9EA-955D-490E-9655-5AD211C0BA55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olympus", "Olympus\Olympus.csproj", "{B29D18F5-4326-4F18-92C3-4FEC23EB5C95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +70,14 @@ Global
 		{3A96F8AB-C7A1-4607-91AB-25563BF1100E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A96F8AB-C7A1-4607-91AB-25563BF1100E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A96F8AB-C7A1-4607-91AB-25563BF1100E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5ADB9EA-955D-490E-9655-5AD211C0BA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5ADB9EA-955D-490E-9655-5AD211C0BA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5ADB9EA-955D-490E-9655-5AD211C0BA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5ADB9EA-955D-490E-9655-5AD211C0BA55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29D18F5-4326-4F18-92C3-4FEC23EB5C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29D18F5-4326-4F18-92C3-4FEC23EB5C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29D18F5-4326-4F18-92C3-4FEC23EB5C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29D18F5-4326-4F18-92C3-4FEC23EB5C95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +88,8 @@ Global
 		{346B6C8A-9B34-4DA4-899C-C55A96969628} = {CF8479DD-5C91-4D36-A3FE-47E24DF817DF}
 		{CB7E6C38-FA46-435D-9240-31ED07E66E60} = {3F34C4CB-1E26-4E1C-8FC0-02D617A2B60C}
 		{3A96F8AB-C7A1-4607-91AB-25563BF1100E} = {1766C59D-6D31-4873-9E97-82F30E4682AC}
+		{D5ADB9EA-955D-490E-9655-5AD211C0BA55} = {F414A970-9DB6-4E5F-86FA-A1BC1109220A}
+		{B29D18F5-4326-4F18-92C3-4FEC23EB5C95} = {F414A970-9DB6-4E5F-86FA-A1BC1109220A}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 66fe5c92-d110-41b4-a069-82e8b805a2ba
