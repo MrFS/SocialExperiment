@@ -14,10 +14,17 @@ namespace Core.XP
             DataTable dt = new DataTable();
 
             dt = Select("SELECT exp FROM users WHERE username='" + user + "'");
+            
+            return dt.Rows[0].Field<int>(0);
+        }
 
-            int EXP = dt.Rows[0].Field<int>(0);
+        public int incEXP(int addEXP, string user)
+        {
+            int newEXP = EXP(user) + addEXP;
 
-            return EXP;
+            Insert("");
+
+            return 0;
         }
         
     }

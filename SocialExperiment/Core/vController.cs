@@ -113,5 +113,13 @@ namespace Core
             }
         }
 
+        public string Version
+        {
+            get
+            {
+                return _Major + "." + _Minor + "." + _Build + "." + _Revision;
+            }
+        }
+
     }
 }

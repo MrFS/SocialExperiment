@@ -9,6 +9,9 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.IO;
 
+using System.Net;
+using System.Net.NetworkInformation;
+
 namespace Core.DB
 {
     public class DBConnect
@@ -81,19 +84,57 @@ namespace Core.DB
         }
 
         //State statement
-        public bool State()
+
+        public ConnectionState States()
         {
-            bool value = false;
-            switch (con.State)
+            try
             {
-                case ConnectionState.Closed:
-                    value = false;
-                    break;
-                case ConnectionState.Open:
-                    value = true;
-                    break;
+                con.Open();
+                return con.State;
             }
-            return value;
+            catch (Exception ex)
+            {
+                Debug.Write(ex.Message);
+                
+                return ConnectionState.Broken + ex.HResult;
+                throw;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        //PING
+        
+        public int DBPing()
+        {
+            Ping p = new Ping();
+
+            return (int)p.Send(server).RoundtripTime;
+        }
+
+        //DB Version
+
+        public string DBv()
+        {
+            try
+            {
+                con.Open();
+                
+                return con.ServerVersion;
+
+            }
+            catch (Exception ex)
+            {
+                return "Unable to retrieve DBv" + Environment.NewLine + ex.Message;
+                throw;
+            }
+            finally
+            {
+                con.Close();
+            }
+            
         }
 
         //Insert statement

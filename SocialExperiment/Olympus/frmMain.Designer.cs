@@ -49,6 +49,7 @@ namespace Olympus
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolStripEx8 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.btnSendPublic = new Syncfusion.Windows.Forms.ButtonAdv();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -62,7 +63,6 @@ namespace Olympus
             this.toolStripEx5 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.tabPageAdv5 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.toolStripEx6 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.btnSendPublic = new Syncfusion.Windows.Forms.ButtonAdv();
             this.tmrOnline = new System.Windows.Forms.Timer(this.components);
             this.tmrUpdateChat = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabMainMenu)).BeginInit();
@@ -265,6 +265,18 @@ namespace Olympus
             this.toolStripEx8.Text = "toolStripEx8";
             this.toolStripEx8.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro;
             // 
+            // btnSendPublic
+            // 
+            this.btnSendPublic.BeforeTouchSize = new System.Drawing.Size(79, 46);
+            this.btnSendPublic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSendPublic.IsBackStageButton = false;
+            this.btnSendPublic.Location = new System.Drawing.Point(689, 0);
+            this.btnSendPublic.Name = "btnSendPublic";
+            this.btnSendPublic.Size = new System.Drawing.Size(79, 46);
+            this.btnSendPublic.TabIndex = 2;
+            this.btnSendPublic.Text = "Send";
+            this.btnSendPublic.Click += new System.EventHandler(this.btnSendPublic_Click);
+            // 
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -420,18 +432,6 @@ namespace Olympus
             this.toolStripEx6.TabIndex = 2;
             this.toolStripEx6.Text = "toolStripEx6";
             this.toolStripEx6.VisualStyle = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Metro;
-            // 
-            // btnSendPublic
-            // 
-            this.btnSendPublic.BeforeTouchSize = new System.Drawing.Size(79, 46);
-            this.btnSendPublic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSendPublic.IsBackStageButton = false;
-            this.btnSendPublic.Location = new System.Drawing.Point(689, 0);
-            this.btnSendPublic.Name = "btnSendPublic";
-            this.btnSendPublic.Size = new System.Drawing.Size(79, 46);
-            this.btnSendPublic.TabIndex = 2;
-            this.btnSendPublic.Text = "Send";
-            this.btnSendPublic.Click += new System.EventHandler(this.btnSendPublic_Click);
             // 
             // tmrOnline
             // 
